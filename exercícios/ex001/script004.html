@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu script</title>
+    <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: rgb(202, 255, 237);
+        }
+        h1{
+            background-image: linear-gradient(to top, rgb(12, 66, 12),rgb(58, 231, 52));
+            color: rgb(255, 255, 255);
+            padding: 12px;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        main{
+            background-color: rgb(125, 216, 102);
+            margin: auto;
+        }
+        main>h3{
+            text-align: center;
+            font-size: 1.3em;
+            color: rgb(224, 24, 24);
+            padding: 8px;
+        }
+        main>h4{
+            text-align: center;
+            font-size: 1.2em;
+            color: brown;
+        }
+        main>p{
+            text-align: center;
+            padding: 5px;
+            text-indent: 30px;
+        }
+        footer{
+            background-color: rgb(13, 75, 54);
+            color: white;
+            padding: 7px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <script>
+            var nome = window.prompt('Qual o seu nome?')
+            document.write(`<h1>Bem-vindo ${nome}</h1>`)
+        </script>
+    </header>
+    
+    <main>
+        <script>
+            document.write(`<h2>Seu nome tem ${nome.length} letras.</h2>`)
+        </script>
+        <h3>Formatando números</h3>
+        <h4><strong>var n1 = 1543.5</strong></h4>
+        <p>Isso vai criar uma variável <strong>n1</strong> que vai receber <strong>1543.5</strong></p>
+        <h4><strong>n1.toFixed(2)</strong></h4>
+        <p>Isso vai fazer com que <strong>1543.5</strong> se transforme em <strong>1543.50</strong></p>
+        <h3>Transformar em salário</h3>
+        <h4><strong>n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})</strong></h4>
+        <P>A saída disso será <strong>R$ 1,545.50</strong></P>
+    </main>
+    <footer>
+        <P>Este site foi Criado por Douglas Felipe para os Engenheiros da FACOMP</P>
+    </footer>
+</body>
+</html>
